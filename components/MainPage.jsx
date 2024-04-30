@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Spinner from "./Spinner"
 import { getReviews, createReview, updateReview, deleteReview } from "@/utils/reviewsFunctions"
-import { sleep } from "openai/core"
 
 const MainPage = () => {
   const [ reviews, setReviews ] = useState([])
