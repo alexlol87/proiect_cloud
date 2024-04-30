@@ -28,7 +28,6 @@ const MainPage = () => {
       likes: 0,
     })
 
-    sleep(2000)
     setTimeout(() => {
       fetchReviews()
     }, 1000)
@@ -41,13 +40,19 @@ const MainPage = () => {
     const review = reviews.find((review) => review._id === id)
     review.likes += 1
     await updateReview(review)
-    fetchReviews()
+
+    setTimeout(() => {
+      fetchReviews()
+    }, 1000)
   }
 
   const handleDeleteButton = async (id) => {
     await deleteReview(id)
     reloadPage++
-    fetchReviews()
+
+    setTimeout(() => {
+      fetchReviews()
+    }, 1000)
   }
 
   const handleChangeReview = (e) => {
