@@ -30,7 +30,7 @@ const MainPage = () => {
 
     setTimeout(() => {
       fetchReviews()
-    }, 1000)
+    }, 500)
 
     setNewReview("")
     setNewTitle("")
@@ -43,7 +43,7 @@ const MainPage = () => {
 
     setTimeout(() => {
       fetchReviews()
-    }, 1000)
+    }, 500)
   }
 
   const handleDeleteButton = async (id) => {
@@ -52,7 +52,7 @@ const MainPage = () => {
 
     setTimeout(() => {
       fetchReviews()
-    }, 1000)
+    }, 500)
   }
 
   const handleChangeReview = (e) => {
